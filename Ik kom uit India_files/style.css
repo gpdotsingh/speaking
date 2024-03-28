@@ -1,0 +1,30 @@
+﻿/* (c) Beheer H & V B.V. Alle intellectuele eigendomsrechten op het computerprogramma TeleToets en op deze broncode van dat computerprogramma, berusten uitsluitend bij Beheer H & V B.V. */
+div#modalattachment > iframe {
+    border-width: 0px;
+}
+
+div#modalattachment {
+    overflow: hidden;
+}
+
+br.rs_pause {
+    content: " ";
+    display: none;
+}
+
+.startExamenReadSpeaker {
+    position: relative;
+    top: 0;
+    left: -10000px;
+}
+
+    .startExamenReadSpeaker > div {
+        min-width: 350px;
+    }
+
+#rssettings_form fieldset
+{
+    width:auto;
+    clear:both;
+    float:none;
+}

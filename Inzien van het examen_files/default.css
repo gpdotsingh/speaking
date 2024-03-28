@@ -1,0 +1,342 @@
+/* (c) Beheer H & V B.V. Alle intellectuele eigendomsrechten op het computerprogramma TeleToets en op deze broncode van dat computerprogramma, berusten uitsluitend bij Beheer H & V B.V. */
+/*@import "horizontaal.css";*/
+@import "tweekolommen.css";
+@import "warnings.css";
+
+body, input, textarea {
+	font-family: "Verdana", "Geneva", "Arial", "Helvetica", sans-serif;
+	font-size: 12px;
+}
+
+#divHead, #divNavKnoppen{
+	background-color: transparent;
+	font-size: 11px;
+}
+
+.sectie h1{
+	background-color: #c6c6c6;
+}
+#divVragen{
+	background-color: #efefef;
+}
+
+.tekst{
+	background-color: transparent;
+}
+
+/* status vraag knoppen */
+.vBtn, .vBtn>input,  .vBtn a{
+	background-color: #c6c6c6;
+	color: #000000; /* nodig omdat anders de stijl van .actief wordt overgenomen */
+	font-weight: normal; /* nodig omdat anders de stijl van .actief wordt overgenomen */
+	text-decoration: none;
+}
+.vBtn.gemaakt, .vBtn.gemaakt>input,  .vBtn.gemaakt a{
+	color: #999999;
+	border-color: #c6c6c6;
+	background-color: #ffffff
+}
+.vBtn.nogmaals, .vBtn.nogmaals>input, .vBtn.nogmaals a{
+	color: #ffffff;
+	background-color: #ff8000;
+}
+.vBtn.actief, .vBtn.actief>input, .vBtn.actief a{
+	color: #ffffff;
+	background-color: #6D1772;
+	border-color: #6D1772;
+	font-weight: bold;
+}
+.vBtn.bestandaanwezig, .vBtn.bestandaanwezig>input, .vBtn.bestandaanwezig a{
+	color: #333333;
+	border-color: #555555;
+	background-color: #dadada;
+	background: url('images/bestandaanwezig.gif') top right;
+}
+
+/* antwoord knop staat nu op mogelijkheid-num, kan op alles in .antwActief*/
+.antwActief .mogelijkheid-num{
+	background-color: #0080ff;
+	color: #ffffff;
+}
+
+/* upload vraag */
+.uploadItem{
+	border-color: #c6c6c6;
+	background-color: #ffffff;
+}
+.uploadItem a{
+	color: #333333;
+}
+#divUploadWizard{
+	border-color: #c6c6c6;
+	background-color: #ffffff;
+}
+#taAntwoordInput{border-color: #999999;}
+
+
+/* toolbar onderin */
+
+
+#divHelp{
+	background-color: #ffffff;
+	border: 1px solid #c6c6c6;
+	color: #000000;
+}
+
+#liBtnVorige, #liBtnVorigeKandidaat{ background: url('images/arrow-180.png') no-repeat 3px 2px; text-align:right;}
+#liBtnVorige input, #liBtnVorigeKandidaat input{ text-align: right; padding-right:10px;}
+#liBtnVolgende, #liBtnVolgendeKandidaat{ background: url('images/arrow.png') no-repeat 81px 2px; text-align:left;}
+#liBtnVolgende input, #liBtnVolgendeKandidaat input{ text-align: left;padding-left:10px;}
+#liBtnVolgendeKandidaat{ background-position: 131px 2px;}
+
+.cButton.disabled{
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+	-moz-opacity:.50;
+	-khtml-opacity: 0.5;
+}
+
+
+/* corrector instellingen */
+
+#correctorenbalk{
+	background-color: #C6C6C6;
+}
+#correctorenuitklap{
+	border-color: #c6c6c6;
+}
+
+#btnMeerinfo{
+	color: #000000;
+}
+
+#correctorenuitklap .achtergrond{
+    background-color: #ffffff;
+}
+#correctorenuitklap fieldset{
+	background-color: #ffffff;
+	border-color: #c6c6c6;
+}
+
+.marked{
+	background-color: #fcf127;
+}
+
+/* jquery ui */
+.ui-dialog .ui-dialog-content {
+   padding: 0px;
+}
+.ui-widget-header {
+   border: 1px solid #000000;
+   background: #6D6E71;
+}
+.ui-widget-content {
+   border: 0px;
+}
+.ui-state-default,
+.ui-widget-content .ui-state-default,
+.ui-widget-header .ui-state-default {
+   border: 0px solid #000000;
+   background: #6D6E71;
+   color: #ffffff;
+}
+.ui-state-hover,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
+.ui-state-focus,
+.ui-widget-content .ui-state-focus,
+.ui-widget-header .ui-state-focus {
+   border: 0px solid #000000;
+   background: #fdf5ce url("images/ui-bg_glass_100_6D6E71_1x400.png") 50% 50% repeat-x;
+   color: #ffffff;
+}
+.ui-state-hover a,
+.ui-state-hover a:hover,
+.ui-state-hover a:link,
+.ui-state-hover a:visited,
+.ui-state-focus a,
+.ui-state-focus a:hover,
+.ui-state-focus a:link,
+.ui-state-focus a:visited {
+	color: #ffffff;
+}
+.ui-state-active,
+.ui-widget-content .ui-state-active,
+.ui-widget-header .ui-state-active {
+	border: 0px solid #000000;
+	background: #ffffff url("images/ui-bg_glass_65_6D6E71_1x400.png") 50% 50% repeat-x;
+	color: #ffffff;
+}
+.ui-state-active a,
+.ui-state-active a:link,
+.ui-state-active a:visited {
+	color: #ffffff;
+}
+.ui-state-highlight,
+.ui-widget-content .ui-state-highlight,
+.ui-widget-header .ui-state-highlight {
+	border: 1px solid #720097;
+	background: #720097 url("images/ui-bg_highlight-soft_75_ffe45c_1x100.png") 50% top repeat-x;
+}
+.ui-icon,
+.ui-widget-content .ui-icon {
+	background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+.ui-state-default .ui-icon {
+	background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+.ui-state-hover .ui-icon,
+.ui-state-focus .ui-icon {
+	background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+.ui-state-active .ui-icon {
+	background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+.ui-state-highlight .ui-icon {
+	background-image: url("images/ui-icons_ffffff_256x240.png");
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+	border-top-left-radius: 0px;
+}
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-right,
+.ui-corner-tr {
+	border-top-right-radius: 0px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-left,
+.ui-corner-bl {
+	border-bottom-left-radius: 0px;
+}
+.ui-corner-all,
+.ui-corner-bottom,
+.ui-corner-right,
+.ui-corner-br {
+	border-bottom-right-radius: 0px;
+}
+.ui-dialog {
+   padding: 0px;
+}
+
+.ui-button-icon-only {
+    text-indent: -9999px;
+}
+
+/* calculator */
+.calculator-inline {
+   border: 0px solid #888;
+   -moz-border-radius: 0px;
+   -webkit-border-radius: 0px;
+   border-radius: 0px;
+   background-color: #CBCBCB;
+
+   padding: 3px;
+   border-left: 1px solid #000000;
+   border-right: 1px solid #000000;
+   border-bottom: 1px solid #000000;
+}
+.calculator-result {
+	background-color: #CAF4CC;
+	border: 2px inset #000;
+	font-size: 160%;
+   -moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+}
+.calculator-result .calculator-formula {
+	font-size: 70%;
+}
+.calculator-focussed {
+	background-color: #CAF4CC;
+}
+.calculator-row button {
+	height: 48px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+   border: 1px inset #000;
+
+   background-color: initial;
+}
+.calculator-row .calculator-ctrl {
+	background-color: initial;
+}
+.calculator-row .calculator-undo, .calculator-row .calculator-clear-error, .calculator-row .calculator-clear {
+	width: 48px;
+}
+.calculator-row .calculator-base, .calculator-row .calculator-angle {
+	width: 48px;
+   font-size: inherit;
+}
+.calculator-row .calculator-base-active, .calculator-row .calculator-angle-active {
+	border: 2px inset #000000;
+}
+.calculator-digit, .calculator-oper {
+	width: 48px;
+}
+button[data-keystroke*='_='] {
+    height: 100px;
+    margin-bottom: -84px;
+}
+button[data-keystroke*='_0'] {
+    width: 100px;
+}
+.calculator-row button, .calculator-ctrl button, .calculator-trig button {
+   background-color: #6D6E71 !important;
+   font-size: 130% !important;
+   font-family: verdana, Arial, Helvetica, sans-serif;
+   color: #ffffff;
+}
+/* Stijlen voor markeren */
+.toolbar
+{
+    color: black;
+    text-align: left;
+    margin-top: -6px;
+}
+
+#casustekst .selected,
+#vraagtekst .selected,
+#antwoordtekst .selected,
+#correctiemodel .selected
+{
+    background-color: yellow;
+}
+
+#casustekst .unselected,
+#vraagtekst .unselected,
+#antwoordtekst .unselected,
+#correctiemodel .unselected
+{
+    background-color: #eee !important;
+}
+
+/* Standard Comments */
+#divOpmerkingentekst.withmarkingcomments {
+    width: 50%;
+}
+
+#divStandaardCommentaar {
+    display: block !important;
+    float: right;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 25px;
+    right: 0;
+}
+
+#divStandaardCommentaar #Markingcomments {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow:auto;
+}

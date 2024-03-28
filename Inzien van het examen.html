@@ -1,0 +1,490 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!-- saved from url=(0067)https://www.oefenexamensduo.nl/portal/appmodules/examen/inzien.ctrl -->
+<html><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript">!(function (cfg){function e(){cfg.onInit&&cfg.onInit(i)}var S,u,D,t,n,i,C=window,x=document,w=C.location,I="script",b="ingestionendpoint",E="disableExceptionTracking",A="ai.device.";"instrumentationKey"[S="toLowerCase"](),u="crossOrigin",D="POST",t="appInsightsSDK",n=cfg.name||"appInsights",(cfg.name||C[t])&&(C[t]=n),i=C[n]||function(l){var d=!1,g=!1,f={initialize:!0,queue:[],sv:"7",version:2,config:l};function m(e,t){var n={},i="Browser";function a(e){e=""+e;return 1===e.length?"0"+e:e}return n[A+"id"]=i[S](),n[A+"type"]=i,n["ai.operation.name"]=w&&w.pathname||"_unknown_",n["ai.internal.sdkVersion"]="javascript:snippet_"+(f.sv||f.version),{time:(i=new Date).getUTCFullYear()+"-"+a(1+i.getUTCMonth())+"-"+a(i.getUTCDate())+"T"+a(i.getUTCHours())+":"+a(i.getUTCMinutes())+":"+a(i.getUTCSeconds())+"."+(i.getUTCMilliseconds()/1e3).toFixed(3).slice(2,5)+"Z",iKey:e,name:"Microsoft.ApplicationInsights."+e.replace(/-/g,"")+"."+t,sampleRate:100,tags:n,data:{baseData:{ver:2}},ver:4,seq:"1",aiDataContract:undefined}}var h=-1,v=0,y=["js.monitor.azure.com","js.cdn.applicationinsights.io","js.cdn.monitor.azure.com","js0.cdn.applicationinsights.io","js0.cdn.monitor.azure.com","js2.cdn.applicationinsights.io","js2.cdn.monitor.azure.com"],k=l.url||cfg.src;if(k){if((n=navigator)&&(~(n=(n.userAgent||"").toLowerCase()).indexOf("msie")||~n.indexOf("trident/"))&&~k.indexOf("ai.3")&&(k=k.replace(/(\/)(ai\.3\.)([^\d]*)$/,function(e,t,n){return t+"ai.2"+n})),!1!==cfg.cr)for(var e=0;e<y.length;e++)if(0<k.indexOf(y[e])){h=e;break}var i=function(e){var a,t,n,i,o,r,s,c,p,u;f.queue=[],g||(0<=h&&v+1<y.length?(a=(h+v+1)%y.length,T(k.replace(/^(.*\/\/)([\w\.]*)(\/.*)$/,function(e,t,n,i){return t+y[a]+i})),v+=1):(d=g=!0,o=k,c=(p=function(){var e,t={},n=l.connectionString;if(n)for(var i=n.split(";"),a=0;a<i.length;a++){var o=i[a].split("=");2===o.length&&(t[o[0][S]()]=o[1])}return t[b]||(e=(n=t.endpointsuffix)?t.location:null,t[b]="https://"+(e?e+".":"")+"dc."+(n||"services.visualstudio.com")),t}()).instrumentationkey||l.instrumentationKey||"",p=(p=p[b])?p+"/v2/track":l.endpointUrl,(u=[]).push((t="SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)",n=o,r=p,(s=(i=m(c,"Exception")).data).baseType="ExceptionData",s.baseData.exceptions=[{typeName:"SDKLoadFailed",message:t.replace(/\./g,"-"),hasFullStack:!1,stack:t+"\nSnippet failed to load ["+n+"] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: "+(w&&w.pathname||"_unknown_")+"\nEndpoint: "+r,parsedStack:[]}],i)),u.push((s=o,t=p,(r=(n=m(c,"Message")).data).baseType="MessageData",(i=r.baseData).message='AI (Internal): 99 message:"'+("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) ("+s+")").replace(/\"/g,"")+'"',i.properties={endpoint:t},n)),o=u,c=p,JSON&&((r=C.fetch)&&!cfg.useXhr?r(c,{method:D,body:JSON.stringify(o),mode:"cors"}):XMLHttpRequest&&((s=new XMLHttpRequest).open(D,c),s.setRequestHeader("Content-type","application/json"),s.send(JSON.stringify(o))))))},a=function(e,t){g||setTimeout(function(){!t&&f.core||i()},500),d=!1},T=function(e){var n=x.createElement(I),e=(n.src=e,cfg[u]);return!e&&""!==e||"undefined"==n[u]||(n[u]=e),n.onload=a,n.onerror=i,n.onreadystatechange=function(e,t){"loaded"!==n.readyState&&"complete"!==n.readyState||a(0,t)},cfg.ld&&cfg.ld<0?x.getElementsByTagName("head")[0].appendChild(n):setTimeout(function(){x.getElementsByTagName(I)[0].parentNode.appendChild(n)},cfg.ld||0),n};T(k)}try{f.cookie=x.cookie}catch(p){}function t(e){for(;e.length;)!function(t){f[t]=function(){var e=arguments;d||f.queue.push(function(){f[t].apply(f,e)})}}(e.pop())}var r,s,n="track",o="TrackPage",c="TrackEvent",n=(t([n+"Event",n+"PageView",n+"Exception",n+"Trace",n+"DependencyData",n+"Metric",n+"PageViewPerformance","start"+o,"stop"+o,"start"+c,"stop"+c,"addTelemetryInitializer","setAuthenticatedUserContext","clearAuthenticatedUserContext","flush"]),f.SeverityLevel={Verbose:0,Information:1,Warning:2,Error:3,Critical:4},(l.extensionConfig||{}).ApplicationInsightsAnalytics||{});return!0!==l[E]&&!0!==n[E]&&(t(["_"+(r="onerror")]),s=C[r],C[r]=function(e,t,n,i,a){var o=s&&s(e,t,n,i,a);return!0!==o&&f["_"+r]({message:e,url:t,lineNumber:n,columnNumber:i,error:a,evt:C.event}),o},l.autoExceptionInstrumented=!0),f}(cfg.cfg),(C[n]=i).queue&&0===i.queue.length?(i.queue.push(e),i.trackPageView({})):e();})({src: "https://js.monitor.azure.com/scripts/b/ai.3.gbl.min.js",crossOrigin: "anonymous",cfg: {  connectionString: "InstrumentationKey=4ae84f0d-fbad-46b9-ae54-4fca290f8d1c;IngestionEndpoint=https://westeurope.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/"}});</script>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="https://www.oefenexamensduo.nl/portal/Style/img/favicon.ico" type="image/ico">
+    <title>Inzien van het examen</title>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+         <script type="text/javascript">var StijlBaseUrl="https://www.oefenexamensduo.nl/style";var Language="nl";var ShowConnectionWarning=true;var EnableContextMenuAndSelection=false;</script><link href="./Inzien van het examen_files/jqueryui.min.css" rel="stylesheet"><script src="./Inzien van het examen_files/masterpage.min.js"></script><style type="text/css"></style><script type="text/javascript" src="./Inzien van het examen_files/stijl.js"></script><link type="text/css" href="./Inzien van het examen_files/style.css" rel="stylesheet"><script type="text/javascript" src="./Inzien van het examen_files/clickEventHelper.js"></script><script type="text/javascript" src="./Inzien van het examen_files/FormSubmitter.js"></script><script type="text/javascript" src="./Inzien van het examen_files/modalAttachments.js"></script><script type="text/javascript" src="./Inzien van het examen_files/spellCheckerOff.js"></script><link type="text/css" href="./Inzien van het examen_files/default.css" rel="stylesheet">
+    <link type="text/css" href="./Inzien van het examen_files/default(1).css" rel="stylesheet"><script type="text/javascript" src="./Inzien van het examen_files/stijl(1).js"></script><!--[if lt IE 9]><script type="text/javascript" src="js/Lib/excanvas.js?9.31.1.1" xmlns:AntiXsrf="urn:AntiXsrf"></script><![endif]--><script type="text/javascript" src="./Inzien van het examen_files/jquery.andriessen.maphilight.js" xmlns:antixsrf="urn:AntiXsrf"></script><script type="text/javascript" src="./Inzien van het examen_files/inzien.js" xmlns:antixsrf="urn:AntiXsrf"></script><link type="text/css" href="./Inzien van het examen_files/inzien.css" rel="stylesheet" xmlns:antixsrf="urn:AntiXsrf"><link href="./Inzien van het examen_files/loadingoverlay.min.css" rel="stylesheet"></head><script src="./Inzien van het examen_files/ai.3.gbl.min.js" crossorigin="anonymous"></script>
+  <body oncontextmenu="if (!EnableContextMenuAndSelection) return false" onselectstart="if (!EnableContextMenuAndSelection) return false" data-new-gr-c-s-check-loaded="14.1163.0" data-gr-ext-installed="">
+    <div class="WarningContainer">
+    </div>
+    <form id="SubmitForm" method="post" action="https://www.oefenexamensduo.nl/portal/appmodules/examen/afsluiten.ctrl" xmlns:antixsrf="urn:AntiXsrf"><input name="__RequestVerificationToken" type="hidden" value="VV64NDey1qGeqqaRvlbmbphevWnuHsqEjYe94rkk378q3_xtLAijCsceI6KWj4-U486Vzyo5lWuxy5-1plMVVMPREV41"><div id="inziendiv"><p></p><div class="divtitel"><span class="spantitel">Oefenexamen Lezen A2 versie 2</span></div><hr><div class="divafdrukdatum"><table width="100%"><tbody><tr><td colwidth="5%" class="colLabel">Examendatum: </td><td align="left">donderdag 28 maart 2024<p></p></td></tr><tr><td colwidth="5%" class="colLabel">Punten: </td><td align="left">11&nbsp;van&nbsp;25</td></tr></tbody></table></div><hr><div class="diveersteopgave">Opgave 1</div><div class="divopgavecontent"></div><div class="divopgavecontent">Sergio leest een folder van zijn tandarts.&nbsp; <br>
+<br>
+Lees eerst de vraag.<br>
+Lees daarna de tekst.
+<hr>
+<br>
+<strong>Welkom bij de tandartspraktijk Oud Zwaluwen</strong>
+<br>
+&nbsp;
+<table width="453" class="EmptyTable" style="width: 453px; height: 104px;">
+    <tbody>
+        <tr>
+            <td><strong>Ons team</strong></td>
+            <td><strong>Werkdagen</strong></td>
+        </tr>
+        <tr>
+            <td>Javier Barnet, tandarts</td>
+            <td>maandag en donderdag</td>
+        </tr>
+        <tr>
+            <td>Marie de Klop, tandarts</td>
+            <td>dinsdag en woensdag</td>
+        </tr>
+        <tr>
+            <td>Peter de Vries, kindertandarts</td>
+            <td>woensdag en donderdag</td>
+        </tr>
+        <tr>
+            <td>Salah Ben Ali, mondhygiënist</td>
+            <td>maandag, dinsdag en donderdag</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<strong>Onze openingstijden</strong>
+<br>
+De praktijk is elke dag geopend van 8.30 tot 17.00 uur. Op vrijdag en in het weekend zijn wij gesloten.&nbsp; <br>
+<br>
+<strong>Afspraak maken</strong><br>
+U kunt onze receptie bellen van maandag tot en met donderdag van 9.00 tot 12.00 uur. Op vrijdag zijn wij gesloten. Ons telefoonnummer is 070 - 3609916.&nbsp;<br>
+<br>
+<strong>Spoedbehandeling tijdens openingstijden</strong><br>
+Heeft u zoveel pijn dat u direct geholpen moet worden? U kunt dan een spoedafspraak maken met de assistente op 06-35571209. U kunt dan altijd dezelfde dag nog bij onze praktijk terecht. Let op: Dit kan niet op vrijdag of in het weekend! <br>
+<br>
+<strong>Spoedbehandeling op vrijdag en in het weekend</strong>
+<br>
+Op vrijdag en in het weekend is de praktijk gesloten. Heeft u veel pijn en kunt u niet wachten tot maandag? U kunt dan bellen met het noodnummer: 070 – 3608814.</div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">1. </td><td>Het is woensdag. <br>
+Sergio heeft kiespijn en wil zo snel mogelijk naar de tandarts. <br>
+Wat moet hij doen?</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> a) </td><td>bellen naar de assistente</td></tr><tr><td align="right" class="colLabel">b) </td><td>bellen naar de receptie</td></tr><tr><td align="right" class="colLabel">c) </td><td>bellen naar het noodnummer</td></tr><tr><td align="right" class="colLabel">d) </td><td>direct naar de praktijk gaan</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:42:40</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:29</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 2</div><div class="divopgavecontent"></div><div class="divopgavecontent">Soumia leest een folder van haar tandarts.<br>
+&nbsp;<br>
+Lees eerst de vraag.<br>
+Lees daarna de tekst.
+<hr>
+<br>
+<strong>Welkom bij de tandartspraktijk Oud Zwaluwen</strong>
+<br>
+&nbsp;
+<table width="453" class="EmptyTable" style="width: 453px; height: 104px;">
+    <tbody>
+        <tr>
+            <td><strong>Ons team</strong></td>
+            <td><strong>Werkdagen</strong></td>
+        </tr>
+        <tr>
+            <td>Javier Barnet, tandarts</td>
+            <td>maandag en donderdag</td>
+        </tr>
+        <tr>
+            <td>Marie de Klop, tandarts</td>
+            <td>dinsdag en woensdag</td>
+        </tr>
+        <tr>
+            <td>Peter de Vries, kindertandarts</td>
+            <td>woensdag en donderdag</td>
+        </tr>
+        <tr>
+            <td>Salah Ben Ali, mondhygiënist</td>
+            <td>maandag, dinsdag en donderdag</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<strong>Onze openingstijden</strong>
+<br>
+De praktijk is elke dag geopend van 8.30 tot 17.00 uur. Op vrijdag en in het weekend zijn wij gesloten.&nbsp; <br>
+<br>
+<strong>Afspraak maken</strong><br>
+U kunt onze receptie bellen van maandag tot en met donderdag van 9.00 tot 12.00 uur. Op vrijdag zijn wij gesloten. Ons telefoonnummer is 070 - 3609916.&nbsp;<br>
+<br>
+<strong>Spoedbehandeling tijdens openingstijden</strong><br>
+Heeft u zoveel pijn dat u direct geholpen moet worden? U kunt dan een spoedafspraak maken met de assistente op 06-35571209. U kunt dan altijd dezelfde dag nog bij onze praktijk terecht. Let op: Dit kan niet op vrijdag of in het weekend! <br>
+<br>
+<strong>Spoedbehandeling op vrijdag en in het weekend</strong>
+<br>
+Op vrijdag en in het weekend is de praktijk gesloten. Heeft u veel pijn en kunt u niet wachten tot maandag? U kunt dan bellen met het noodnummer: 070 – 3608814.</div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">2. </td><td>Soumia wil op maandag een afspraak maken bij de tandarts. <br>
+Bij wie kan dat?</td></tr><tr><td align="right" class="colLabel">a) </td><td>Marie de Klop</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> b) </td><td>Javier Barnet</td></tr><tr><td align="right" class="colLabel">c) </td><td>Peter de Vries</td></tr><tr><td align="right" class="colLabel">d) </td><td>Salah Ben Ali</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>c</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:42:42</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:31</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 3</div><div class="divopgavecontent"></div><div class="divopgavecontent">Anna heeft werk, maar ze zoekt een andere baan. Ze ziet een vacature en ze wil solliciteren. Daarom wil ze haar cv maken.<br>
+<br>
+Lees eerst de vraag.<br>
+Lees daarna de tekst.<br>
+<br>
+<hr>
+<br>
+<table style="border: 1px solid #000000; border-image: none; border-collapse: collapse;">
+    <tbody>
+        <tr>
+            <td style="padding: 10px;">
+            <strong>Wat is een cv?</strong>
+            <br>
+            Uw curriculum vitae (cv) stuurt u op als u solliciteert naar een baan. In uw cv staat wie u bent en wat u kunt.
+            <br>
+            <br>
+            <strong>Hoe maakt u een cv?
+            </strong><br>
+            Een cv bestaat uit de volgende punten:
+            <ul>
+                <li><strong>persoonlijke gegevens</strong><br>
+                Hier zet u uw naam, adres, telefoon, e-mailadres, geboortedatum.</li>
+                <br>
+                <li><strong>opleiding</strong>
+                <br>
+                Hier zet u alle opleidingen en cursussen die u hebt gedaan.</li>
+                <br>
+                <li><strong>werkervaring</strong>
+                <br>
+                Hier schrijft u het werk dat u gedaan heeft. Dus ook vrijwilligerswerk en stages. Schrijf hier ook wat u allemaal op uw werk moest doen.</li>
+                <br>
+                <li><strong>overig</strong>
+                <br>
+                Hier zet u alle andere dingen die belangrijk zijn. Zoals:</li>
+                <ul>
+                    <li>talenkennis</li>
+                    <li>computerkennis</li>
+                    <li>rijbewijs</li>
+                </ul>
+            </ul>
+            </td>
+        </tr>
+    </tbody>
+</table></div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">3. </td><td>Waarom maakt Anna een cv?</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> a) </td><td>Omdat zij een nieuwe baan wil.</td></tr><tr><td align="right" class="colLabel">b) </td><td>Omdat zij geen baan heeft.</td></tr><tr><td align="right" class="colLabel">c) </td><td>Omdat zij al een baan heeft.</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:42:44</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:32</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">4. </td><td>Anna heeft in een buurthuis vrijwillig klusjes gedaan.<br>
+Waar moet ze dat op haar cv zetten?</td></tr><tr><td align="right" class="colLabel">a) </td><td>Bij persoonlijke gegevens.</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> b) </td><td>Bij werkervaring.</td></tr><tr><td align="right" class="colLabel">c) </td><td>Bij overig.</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>1 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:42:46</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:34</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">5. </td><td>Anna heeft vorig jaar haar scooterrijbewijs gehaald.<br>
+Waar moet ze dat op haar cv zetten?</td></tr><tr><td align="right" class="colLabel">a) </td><td>Bij persoonlijke gegevens.</td></tr><tr><td align="right" class="colLabel">b) </td><td>Bij werkervaring.</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> c) </td><td>Bij overig.</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:42:47</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:42:47</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 4</div><div class="divopgavecontent"></div><div class="divopgavecontent">In de cursusgids van Talenschool Het Palet staat de tekst ‘Praktische zaken’.
+<br>
+<br>
+Lees eerst de vraag.
+<br>
+Lees daarna de tekst.
+<hr>
+<br>
+<strong>Vakanties</strong>
+<table style="border: 1px solid #000000;" cellspacing="0" cellpadding="0">
+    <tbody>
+        <tr>
+            <td style="border: 1px solid #000000;">Herfstvakantie&nbsp;</td>
+            <td style="border: 1px solid #000000;">Maandag 17 oktober t/m vrijdag 21 oktober </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #000000;">Kerstvakantie</td>
+            <td style="border: 1px solid #000000;">Maandag 26 december t/m vrijdag 6 januari </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #000000;">Voorjaarsvakantie</td>
+            <td style="border: 1px solid #000000;"> Maandag 27 februari t/m vrijdag 2 maart </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #000000;">Meivakantie</td>
+            <td style="border: 1px solid #000000;">Dinsdag 1 mei t/m vrijdag 4 mei </td>
+        </tr>
+        <tr>
+            <td style="border: 1px solid #000000;">Zomervakantie</td>
+            <td style="border: 1px solid #000000;">Maandag 16 juli t/m vrijdag 31 augustus </td>
+        </tr>
+    </tbody>
+</table>
+<p class="MsoNormal" style="margin: 0cm 0cm 0pt; line-height: normal;">&nbsp;</p>
+<strong>Op vakantie?</strong><br>
+Gaat u buiten de vakantieperiode om op vakantie? Vertel dit dan aan uw docent. Dit moet u uiterlijk 2 weken vóór uw vakantie schriftelijk doen.
+<br>
+<br>
+<strong>Ziek?</strong><br>
+Bent u ziek en kunt u niet naar de les komen, bel dan met de administratie van de talenschool. U moet dit zo snel mogelijk doen, uiterlijk een uur voordat de les begint. <br>
+<br>
+<strong>Open dagen</strong><br>
+Belangstellenden en nieuwe cursisten zijn welkom op:<br>
+Donderdag 26 januari 17.30 uur – 21.00 uur
+<br>
+Zaterdag 28 januari 10.00 uur – 13.00 uur
+<br>
+Vrijdag 20 april  18.30 uur – 21.00 uur
+<br>
+<br>
+Op deze dagen zijn er geen lessen op de talenschool.
+Als u het leuk vindt, kunt u helpen tijdens de open dagen. U kunt bijvoorbeeld informatie geven aan mensen die een talencursus willen volgen. Zij vinden het leuk om te horen wat u van de talenschool vindt. <br>
+Nieuwe cursisten komen ook vaak naar de open dagen. Zo kunt u ze alvast leren kennen. Wilt u helpen tijdens de open dagen? Zeg dit dan tegen uw docent of tegen de administratie.</div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">6. </td><td>Joy gaat in juni een week naar het buitenland. <br>
+Wat moet zij doen?</td></tr><tr><td align="right" class="colLabel">a) </td><td>Zij moet de administratie van de school bellen.</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> b) </td><td>Zij moet dit laten weten aan haar docent.</td></tr><tr><td align="right" class="colLabel">c) </td><td>Zij moet dit tegen de administratie <span style="text-decoration: underline;">en</span> de docent vertellen.</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>1 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:42:49</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:42:49</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">7. </td><td>Samad heeft elke donderdag Nederlandse les. <br>
+Wat kan hij donderdag 26 januari op de talenschool doen?</td></tr><tr><td align="right" class="colLabel">a) </td><td>Hij kan gewoon naar de les gaan.</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> b) </td><td>Hij kan meehelpen op de open dag.</td></tr><tr><td align="right" class="colLabel">c) </td><td>Niets, want de school is die dag gesloten.</td></tr><tr><td align="right" class="colLabel">d) </td><td>Niets, want die dag is alleen voor nieuwe cursisten.</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>c</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:42:51</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:42:51</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">8. </td><td>Yolande wil graag naar een open dag van talenschool Het Palet. <br>
+Zij werkt van dinsdag tot en met zaterdag van 16:00 tot 22.00 uur. <br>
+Wanneer kan zij naar een open dag?</td></tr><tr><td align="right" class="colLabel">a) </td><td>op donderdag 26 januari</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> b) </td><td>op zaterdag 28 januari</td></tr><tr><td align="right" class="colLabel">c) </td><td>op vrijdag 20 april</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>1 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:42:54</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:42:54</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 5</div><div class="divopgavecontent"></div><div class="divopgavecontent">Anya is ziek. <br>
+Ze leest de regels van haar werk.<br>
+<br>
+Lees eerst de vraag.<br>
+Lees daarna de tekst.
+<hr>
+<strong><br>
+Ziekmelding
+<br>
+</strong>Als u ziek bent en niet kunt komen werken, moet u dit bij uw leidinggevende melden. U hoeft niet te vertellen waar u last van heeft. Wel moet u zeggen hoe lang u denkt ziek te zijn. <br>
+<br>
+Uw leidinggevende is Chantal Miedema. U kunt haar bellen vanaf 7:00 uur. Haar telefoonnummer is 06-12563490. U moet Chantal altijd voor 9:30 uur bellen. Als u Chantal niet kunt bereiken, dan kunt u bellen met Jaap van Bommel. Hij werkt bij het secretariaat. Het secretariaat is bereikbaar tussen 8:00 en 12:00 uur op 030-5452343.
+<br>
+<br>
+<strong>De bedrijfsarts</strong>
+<br>
+U kunt altijd een afspraak maken met de bedrijfsarts. Zijn telefoonnummer is 030-3448015.
+<br>
+Als u langer dan zes weken ziek bent, krijgt u een uitnodiging van onze bedrijfsarts. Zijn naam is Cees Zwaan. Hij gaat samen met u kijken hoe u weer beter kunt worden.</div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">9. </td><td>Anya moet zich ziek melden bij Jaap van Bommel. <br>
+Hoe laat kan ze bellen?</td></tr><tr><td align="right" class="colLabel">a) </td><td>tussen 7:00 uur en 9:30 uur</td></tr><tr><td align="right" class="colLabel">b) </td><td>tussen 7:00 uur en 12:00 uur</td></tr><tr><td align="right" class="colLabel">c) </td><td>tussen 8:00 uur en 9:30 uur</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> d) </td><td>tussen 8:00 uur en 12:00 uur</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>c</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:42:56</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:42:56</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 6</div><div class="divopgavecontent"></div><div class="divopgavecontent">Antonio is ziek.
+<br>
+Hij leest de regels van zijn werk.
+<br>
+<br>
+Lees eerst de vraag.
+<br>
+Lees daarna de tekst.
+<hr>
+<br>
+<strong>Ziekmelding</strong>
+<br>
+Als u ziek bent en niet kunt komen werken, moet u dit bij uw leidinggevende melden. U hoeft niet te vertellen waar u last van heeft. Wel moet u zeggen hoe lang u denkt ziek te zijn. <br>
+<br>
+Uw leidinggevende is Chantal Miedema. U kunt haar bellen vanaf 7:00 uur. Haar telefoonnummer is 06-12563490. U moet Chantal altijd voor 9:30 uur bellen. Als u Chantal niet kunt bereiken, dan kunt u bellen met Jaap van Bommel. Hij werkt bij het secretariaat. Het secretariaat is bereikbaar tussen 8:00 en 12:00 uur op 030-5452343.<br>
+<br>
+<strong>De bedrijfsarts</strong>
+<br>
+U kunt altijd een afspraak maken met de bedrijfsarts. Zijn telefoonnummer is 030-3448015.
+<br>
+Als u langer dan zes weken ziek bent, krijgt u een uitnodiging van onze bedrijfsarts. Zijn naam is Cees Zwaan. Hij gaat samen met u kijken hoe u weer beter kunt worden.</div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">10. </td><td>Antonio wil een afspraak maken met de bedrijfsarts. <br>
+Wanneer kan dat?</td></tr><tr><td align="right" class="colLabel">a) </td><td>Dat kan alleen als hij langer dan zes weken ziek is.</td></tr><tr><td align="right" class="colLabel">b) </td><td>Dat kan alleen als Chantal dat goed vindt.</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> c) </td><td>Dat kan op elk moment dat hij dat wil.</td></tr><tr><td align="right" class="colLabel">d) </td><td>Dat kan alleen als hij een uitnodiging krijgt.</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>c</td></tr><tr><td class="colLabel">Score:</td><td>1 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:42:58</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:42:58</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 7</div><div class="divopgavecontent"></div><div class="divopgavecontent"><p>Het buurtcomité van de Oranjebuurt houdt een buurtbijeenkomst.<br>
+De mensen uit de buurt krijgen een uitnodiging.</p>
+<p>Lees eerst de vraag.<br>
+Lees daarna de tekst. </p>
+<hr>
+<br>
+<strong>Uitnodiging buurtbijeenkomst</strong>
+<br>
+We hebben de afgelopen jaren veel gedaan in de Oranjebuurt. Er is nu een speeltuin voor de kinderen. En we hebben met alle bewoners een paar bomen geplant. Maar we willen meer. We nodigen u daarom van harte uit voor de buurtbijeenkomst op woensdagavond 24 november. We zullen dan met elkaar praten over de veranderingen. We zullen ook de plannen voor volgend jaar bespreken.
+<br>
+<br>
+<strong>Programma<br>
+</strong>
+19:30 uur: Ontvangst en welkomstdrankje<br>
+19:45 uur: Muzikaal optreden Milan &amp; Zelina
+<br>
+20:15 uur: Film over wat we gedaan hebben in de wijk
+<br>
+21:00 uur: Themagroepen (zie hieronder)<br>
+22:00 uur: Hapjes, drankjes en muziek
+<br>
+<br>
+<strong>Themagroepen</strong>
+<br>
+U kunt meepraten over de volgende thema’s:<br>
+<br>
+• Activiteiten voor kinderen<br>
+• Winkels
+<br>
+• Werkgelegenheid
+<br>
+• Veiligheid
+<br>
+• Groen en schoon
+<br>
+<br>
+<strong>Opgeven</strong>
+<br>
+De buurtbijeenkomst wordt een informatieve en gezellige avond. Wilt u komen? Laat dat dan vóór 23 november weten aan het buurtcomité. We zien u graag op 24 november in het buurthuis!
+<br>
+<br>
+Buurtcomité Oranjebuurt</div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">11. </td><td>Allan wil meer sportlessen voor kinderen. <br>
+Hij wil graag naar de buurtbijeenkomst komen, maar hij heeft weinig tijd. <br>
+Hoe laat kan hij het beste komen om over de sportlessen te praten?</td></tr><tr><td align="right" class="colLabel">a) </td><td>om 19:30 uur</td></tr><tr><td align="right" class="colLabel">b) </td><td>om 20:15 uur</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> c) </td><td>om 21:00 uur</td></tr><tr><td align="right" class="colLabel">d) </td><td>om 22:00 uur</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>c</td></tr><tr><td class="colLabel">Score:</td><td>1 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:42:59</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:42:59</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">12. </td><td>Mirja wil naar de buurtbijeenkomst komen. <br>
+Wanneer moet ze zich opgeven?</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> a) </td><td>uiterlijk 22 november</td></tr><tr><td align="right" class="colLabel">b) </td><td>op 23 november</td></tr><tr><td align="right" class="colLabel">c) </td><td>op de avond zelf</td></tr><tr><td align="right" class="colLabel">d) </td><td>Ze hoeft zich niet op te geven.</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>c</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:01</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:01</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 8</div><div class="divopgavecontent"></div><div class="divopgavecontent">Mohammed en Ali lezen de folder van het sportcentrum.<br>
+<br>
+Lees eerst de vraag.<br>
+Lees daarna de tekst.<br>
+<br>
+<hr>
+<br>
+<table style="border: 1px solid #000000; border-image: none; border-collapse: collapse;">
+    <tbody>
+        <tr>
+            <td style="padding: 10px;">
+            Het sportcentrum is geopend op:<br>
+            <br>
+            Werkdagen van 08.00 uur tot 22.00 uur.<br>
+            Zaterdag en zondag van 09.00 uur tot 17.00 uur.<br>
+            <br>
+            Er zijn drie soorten abonnementen:<br>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>- Basis:</td>
+                        <td>14,- per maand:&nbsp;</td>
+                        <td>zoveel sporten als u maar wilt;&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>- Daluren:</td>
+                        <td>12,95 per maand:</td>
+                        <td>op werkdagen sporten tot 17.00 uur;</td>
+                    </tr>
+                    <tr>
+                        <td>- Weekend:</td>
+                        <td>10,- per maand:</td>
+                        <td>vanaf vrijdagmiddag 17.00 uur.</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            U kunt zich  aanmelden bij het  sportcentrum.
+            </td>
+        </tr>
+    </tbody>
+</table></div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">13. </td><td>Mohammed heeft een basisabonnement.<br>
+Tot hoe laat kan hij op dinsdag sporten?</td></tr><tr><td align="right" class="colLabel">a) </td><td>Tot 17.00 uur.</td></tr><tr><td align="right" class="colLabel">b) </td><td>Tot 20.00 uur.</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> c) </td><td>Tot 22.00 uur.</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:03</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:03</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">14. </td><td>Ali  heeft een weekendabonnement.<br>
+Hij krijgt een baan in het weekend, dan moet hij van 9 tot 5 uur werken. Wanneer kan Ali nog  sporten?</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> a) </td><td>Vrijdagavond.</td></tr><tr><td align="right" class="colLabel">b) </td><td>Zaterdagavond.</td></tr><tr><td align="right" class="colLabel">c) </td><td>Zondagavond.</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:05</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:05</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 9</div><div class="divopgavecontent"></div><div class="divopgavecontent"><p>Samira schrijft een brief aan haar docent Yvonne.</p><p>Lees eerst de vraag.<br>Lees daarna de tekst. </p><hr><p></p><p></p><p>Dag Yvonne,<br><br>Ik wil je graag bedanken voor de geweldige taalcursus. Ik heb geleerd om de Nederlandse taal echt te gebruiken. Ik durf nu meer in het Nederlands te praten en te schrijven. En ik kan het nu ook veel beter. Ik praatte eigenlijk nooit met Nederlanders. Ik vind het nog steeds moeilijk en maak nog steeds fouten, maar ik doe het nu wel. Mijn man heeft me wel geholpen bij deze brief.&nbsp;&nbsp;&nbsp; <br><br>Het is belangrijk dat ik blijf oefenen. Dat doe ik door de taal gewoon te gebruiken. Soms willen mijn man of mijn kinderen me helpen. Maar ik wil het zelf proberen. Als ik hun hulp nodig heb, dan vraag ik het wel.&nbsp;&nbsp; <br><br>Het is jammer dat ik alles in één jaar moest leren. Het is echt heel veel. Maar ik heb de cursus afgemaakt. En ik ben geslaagd voor mijn examen.&nbsp; <br><br>Nogmaals heel veel dank voor al je hulp. Jij bent een fantastische docent!&nbsp; <br><br>Groetjes, <br>Samira<br></p></div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">15. </td><td>Wat heeft Samira van Yvonne geleerd?</td></tr><tr><td align="right" class="colLabel">a) </td><td>zonder fouten Nederlands te praten en te schrijven</td></tr><tr><td align="right" class="colLabel">b) </td><td>hoe ze haar familie met de taal kan helpen</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> c) </td><td>de Nederlandse taal beter en vaker te gebruiken</td></tr><tr><td align="right" class="colLabel">d) </td><td>te schrijven zonder hulp van anderen</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>c</td></tr><tr><td class="colLabel">Score:</td><td>1 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:06</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:06</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">16. </td><td>Samira is blij met de cursus van Yvonne. <br>
+Toch vindt ze niet alles goed. <br>
+Wat vindt ze <strong>niet</strong> zo goed?</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> a) </td><td>Ze vindt dat ze te weinig tijd had.</td></tr><tr><td align="right" class="colLabel">b) </td><td>Ze vindt dat de cursus te lang duurde.</td></tr><tr><td align="right" class="colLabel">c) </td><td>Ze vindt dat ze te weinig oefeningen kreeg.</td></tr><tr><td align="right" class="colLabel">d) </td><td>Ze vindt dat de lessen te moeilijk waren.</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:08</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:08</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 10</div><div class="divopgavecontent"></div><div class="divopgavecontent">Mouna heeft een folder van haar huisarts.
+<br>
+<br>
+Lees eerst de vraag.
+<br>
+Lees daarna de tekst.
+<hr>
+<br>
+<strong>Informatie huisarts</strong>
+<br>
+<br>
+<strong>Openingstijden<br>
+</strong>Wij zijn open van maandag tot en met donderdag van 08:00 tot 17:00 uur en op vrijdag van 08:00 tot 12:30 uur.
+<br>
+<br>
+<strong>’s Avonds, in het weekend en tijdens de vakantie</strong>
+<br>
+Op avonden, in het weekend en op vrijdagmiddag kunt u de centrale huisartsenpost bellen (0900 2233333). Zij geven u telefonisch advies. Als het nodig is, kunt u een afspraak maken voor een bezoek. Deze informatie staat ook op onze website: www.uwhuisarts.nl. Hier kunt u ook vinden wie uw huisarts vervangt tijdens vakanties.
+<br>
+<br>
+<strong>Noodgevallen<br>
+</strong>Als u bij een noodgeval niemand direct kunt bereiken, belt u dan het alarmnummer (112).
+<br>
+<br>
+<strong>Afspraak maken</strong>
+<br>
+Een afspraak voor het spreekuur van de huisarts kunt u maken bij de assistente. U kunt dat bij ons aan de balie doen of telefonisch: 031&nbsp;2850127. Belt u het liefst tussen 08:00 en 10:30 uur.
+<br>
+<br>
+<strong>Telefonisch spreekuur</strong>
+<br>
+Voor kort overleg en uitslagen (bijvoorbeeld na bloed prikken) kunt u de assistente bellen. Dat kan van maandag tot en met donderdag van 13:30 tot 14:30 uur.
+<br>
+<br>
+Ons adres en ons telefoonnummer kunt u ook vinden in het weekblad.</div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">17. </td><td>Het is vrijdag. <br>
+Mouna wil een afspraak met haar huisarts. <br>
+Ze wil vandaag naar de assistente bellen. <br>
+Wanneer kan ze dat het beste doen?</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> a) </td><td>tussen 08:00 en 10:30 uur</td></tr><tr><td align="right" class="colLabel">b) </td><td>tussen 10:30 en 12:30 uur</td></tr><tr><td align="right" class="colLabel">c) </td><td>tussen 13:30 en 14:30 uur</td></tr><tr><td align="right" class="colLabel">d) </td><td>vóór 13:30 uur of ná 14:30 uur</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:10</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:10</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">18. </td><td>Mouna heeft een huisarts nodig. <br>
+Haar eigen huisarts heeft vakantie. <br>
+Wat moet Mouna doen?</td></tr><tr><td align="right" class="colLabel">a) </td><td>in het weekblad opzoeken bij wie ze moet zijn</td></tr><tr><td align="right" class="colLabel">b) </td><td>naar de centrale huisartsenpost bellen</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> c) </td><td>op www.uwhuisarts.nl opzoeken bij wie ze moet zijn</td></tr><tr><td align="right" class="colLabel">d) </td><td>naar het alarmnummer voor noodgevallen bellen</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>c</td></tr><tr><td class="colLabel">Score:</td><td>1 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:12</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:12</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 11</div><div class="divopgavecontent"></div><div class="divopgavecontent">In een studieboek staan tips om woorden te leren.
+<br>
+<br>
+Lees eerst de vraag.
+Lees daarna de tekst.
+<hr>
+<strong>Woorden leren
+<br>
+<br>
+1. De kaartjesmethode</strong>
+<br>
+Kent u nog bijna geen woorden in de taal die u wilt leren? Dan is dit een goede manier. U neemt een stapel kaartjes (bijvoorbeeld 5 x 10 cm). U schrijft op elk kaartje een woord dat u moet leren. Op de achterkant van het kaartje schrijft u wat het woord in uw eigen taal betekent.
+<ol>
+    <li>U legt de kaartjes op een stapel. </li>
+    <li>U kijkt bij elk woord of u weet wat het woord betekent. Weet u het? Dan legt u het kaartje op de stapel ‘goed’. Weet u het niet? Dan legt u het kaartje op de stapel ‘fout’. U doet dit met alle kaartjes. </li>
+    <li>U pakt daarna de stapel ‘fout’ opnieuw. U doet weer hetzelfde als bij stap 2. </li>
+    <li>U doet stap 2 en stap 3 net zo lang tot de stapel ‘fout’ weg is.</li>
+</ol>
+<p><strong>2. De schuifmethode</strong> <br>
+Heeft u het altijd druk? De schuifmethode is een snelle manier om woorden te leren. U legt een papier op de woordenlijst die u moet leren. U schuift dit papier naar beneden, zodat u alleen het woord ziet dat u wilt leren. U spreekt het vreemde woord eerst hardop uit. U schrijft daarna het woord op. U kijkt of u het woord goed geschreven heeft. U leert zo de eerste 8 woorden. Leer ze niet alleen van boven naar beneden, maar ook van beneden naar boven en door elkaar. U leert daarna de volgende 8 woorden en u herhaalt de eerste 8 woorden. Zo leert u de hele woordenlijst. <br>
+<br>
+<strong>3. Het woordnet</strong> <br>
+Kent u al veel woorden? Maar vergeet u altijd een paar moeilijke woorden? Maak dan een ‘woordnet’ voor elk moeilijk woord. U schrijft het moeilijke woord in het midden van een blad papier. U zet daaromheen allemaal woorden die iets te maken hebben met het moeilijke woord. U zet bij ‘verjaardag’ bijvoorbeeld ‘taart’, ‘cadeautjes’, ‘feest’, ‘jarig’ en ‘slingers’. Zo onthoudt u het moeilijke woord beter.</p></div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">19. </td><td>Karima gebruikt de schuifmethode om woorden te leren. <br>
+In welke volgorde moet zij de woorden leren?</td></tr><tr><td align="right" class="colLabel">a) </td><td>alleen door elkaar</td></tr><tr><td align="right" class="colLabel">b) </td><td>alleen van beneden naar boven</td></tr><tr><td align="right" class="colLabel">c) </td><td>alleen van boven naar beneden</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> d) </td><td>in allerlei verschillende volgordes</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>c</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:14</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:14</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">20. </td><td>Noa leert al een paar maanden Nederlandse woorden. <br>
+Ze kent de meeste woorden al goed. <br>
+Ze heeft moeite met sommige woorden. Ze wil die ook graag leren.<br>
+Welke manier is dan het beste?</td></tr><tr><td align="right" class="colLabel">a) </td><td>de kaartjesmethode</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> b) </td><td>het woordnet</td></tr><tr><td align="right" class="colLabel">c) </td><td>de schuifmethode</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>1 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:16</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:16</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 12</div><div class="divopgavecontent"></div><div class="divopgavecontent">Xavier werkt in een hotel.
+<br>
+Hij krijgt zijn rooster voor dit weekend.
+<br>
+<br>
+Lees eerst de vraag.
+<br>
+Lees daarna de tekst.
+<hr>
+<br>
+<strong>WERKROOSTER HOTEL ‘CHEZ JANOU’<br>
+</strong><img alt="" style="border-width: 0px; border-style: solid;" src="./Inzien van het examen_files/Werkrooster.JPG"><br>
+<br>
+<strong>N</strong>	 nachtdienst van 23.00 uur tot 07.30 uur
+<br>
+<strong>O</strong>	 ochtenddienst van 7.30 uur tot 14.00 uur
+<br>
+<strong>M</strong> 	 middagdienst van 14.00 uur tot 18.30 uur
+<br>
+<strong>A</strong>	 avonddienst van 18.30 uur tot 23.00 uur
+<br>
+<br>
+Wil je een dienst ruilen met een collega? <br>
+Dan moet je dat zelf regelen. <br>
+Kijk eerst op het rooster wie van je collega’s kan. <br>
+Let op:<br>
+- Je mag altijd twee diensten achter elkaar werken. <br>
+Let op: als
+je nachtdienst hebt (gehad), mag dat <span style="text-decoration: underline;">niet</span>.
+<br>
+-  Je mag per weekend maximaal twee nachtdiensten draaien.</div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">21. </td><td>Hoe lang moet Xavier vrijdag werken?</td></tr><tr><td align="right" class="colLabel">a) </td><td>van 07.30 uur tot 18.30 uur</td></tr><tr><td align="right" class="colLabel">b) </td><td>van 14.00 uur tot 18.30 uur</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> c) </td><td>van 14.00 uur tot 23.00 uur</td></tr><tr><td align="right" class="colLabel">d) </td><td>van 18.30 uur tot 23.00 uur</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>c</td></tr><tr><td class="colLabel">Score:</td><td>1 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:18</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:18</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">22. </td><td>Xavier moet op zaterdagmiddag werken<br>
+Hij wil dan graag vrij.<br>
+Met wie kan Xavier ruilen?</td></tr><tr><td align="right" class="colLabel">a) </td><td>met Casper</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> b) </td><td>met Ersin</td></tr><tr><td align="right" class="colLabel">c) </td><td>met Juul</td></tr><tr><td align="right" class="colLabel">d) </td><td>met niemand</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>1 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:20</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:20</td></tr></tbody></table></div><p></p><div class="diveersteopgave">Opgave 13</div><div class="divopgavecontent"></div><div class="divopgavecontent">Omar werkt in een bloemenwinkel.&nbsp;<br>
+Hij krijgt een e-mail van zijn baas, Remco.<br>
+<br>
+Lees eerst de vraag.&nbsp;<br>
+Lees daarna de tekst.<br>
+<hr>
+<p style="text-align: left;">Beste collega’s,<br>
+<br>
+We hebben vanmorgen met zijn allen gepraat. Dat was goed om te doen. We hebben duidelijke afspraken gemaakt over het werk in de winkel. Iedereen moet zich aan deze afspraken houden. De afspraken staan hieronder:<span style="text-align: justify;"><br>
+</span></p>
+<ul>
+    <li><span style="text-align: justify;">De winkel is vanaf nu elke eerste en derde zondag van de maand open. Jantine werkt dan altijd. Elke eerste zondag helpt Ricardo haar.&nbsp;Nadia werkt op elke derde zondag van de maand met Jantine. Op de andere zondagen is de winkel dicht. Omar en Moniek werken&nbsp;niet op zondag.&nbsp;</span></li>
+    <p style="text-align: left;">
+    </p>
+    <li style="text-align: justify;">
+    <div style="text-align: left;">We hebben vanaf 1 maart een nieuwe klantenkaart. Klanten mogen hun oude klantenkaart dan niet meer gebruiken. De oude kaart&nbsp;kostte €5,- , maar de nieuwe klantenkaart is gratis! We vertellen de klant ook over het sparen met de nieuwe kaart. Bij elke €10,-&nbsp;krijgt de klant één punt. Bij tien punten krijgt de klant&nbsp;€15,- korting.</div>
+    </li>
+    <p style="text-align: left;">
+    </p>
+    <li style="text-align: justify;">
+    <div style="text-align: left;">We dweilen de winkel twee keer per week: op dinsdag en op zaterdag. We deden dit tot nu toe altijd één keer per week, maar het is&nbsp;nu wel erg vaak vies. Is het druk geweest in de winkel? Dan dweilen we nog een derde keer. We willen de winkel graag&nbsp;schoonhouden.</div>
+    </li>
+    <p style="text-align: left;">
+    </p>
+</ul>
+<p style="text-align: left;">
+Heb je nog vragen? Laat het me even weten.&nbsp;<br>
+<br>
+Groeten,&nbsp;<br>
+Remco</p></div><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">23. </td><td>Wie werken op de eerste zondag van april?</td></tr><tr><td align="right" class="colLabel">a) </td><td>Jantine en Nadia</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> b) </td><td>Jantine en Ricardo</td></tr><tr><td align="right" class="colLabel">c) </td><td>Omar en Moniek</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>1 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:22</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:22</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">24. </td><td>Hoeveel kost de nieuwe klantenkaart?</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> a) </td><td>Die is gratis.</td></tr><tr><td align="right" class="colLabel">b) </td><td>€ 5,-</td></tr><tr><td align="right" class="colLabel">c) </td><td>€ 10,-</td></tr><tr><td align="right" class="colLabel">d) </td><td>€ 15,-</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>c</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:24</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:24</td></tr></tbody></table></div><p></p><p></p><div class="divvraag"><table class="TabelStijlRap" width="100%"><tbody><tr><td width="20%" class="colLabel">25. </td><td>Hoe vaak moeten Omar en zijn collega’s dweilen?</td></tr><tr><td align="right" class="colLabel">a) </td><td>altijd één keer per week</td></tr><tr><td align="right" class="colLabel">b) </td><td>altijd twee keer per week</td></tr><tr><td align="right" class="colLabel"> <b>(Correct)</b> c) </td><td>twee of drie keer per week</td></tr><tr><td class="colLabel">Gegeven antwoord:</td><td>b</td></tr><tr><td class="colLabel">Score:</td><td>0 van 1</td></tr><tr><td class="colLabel">Eerste opslag:</td><td>28-3-2024 18:43:27</td></tr><tr><td class="colLabel">Laatste opslag:</td><td>28-3-2024 18:43:36</td></tr></tbody></table></div><p></p><hr><input type="submit" class="Button1" value="Afsluiten"><p class="noprint"><input type="button" onclick="window.print();" class="Button1" value="Print"></p>
+      </div>
+    </form>
+  
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"><template shadowrootmode="open"><style>
+      div.grammarly-desktop-integration {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select:none;
+        user-select:none;
+      }
+
+      div.grammarly-desktop-integration:before {
+        content: attr(data-content);
+      }
+    </style><div aria-label="grammarly-integration" role="group" tabindex="-1" class="grammarly-desktop-integration" data-content="{&quot;mode&quot;:&quot;full&quot;,&quot;isActive&quot;:true,&quot;isUserDisabled&quot;:false}"></div></template></grammarly-desktop-integration></html>

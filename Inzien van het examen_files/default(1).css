@@ -1,0 +1,389 @@
+/* (c) Beheer H & V B.V. Alle intellectuele eigendomsrechten op het computerprogramma TeleToets en op deze broncode van dat computerprogramma, berusten uitsluitend bij Beheer H & V B.V. */
+/*@import "horizontaal.css";*/
+@import "../../../../_templates/tweekolommen_epe.css";
+#divsitau0{
+position: absolute;
+bottom:0px;
+left: 0px;
+width: 20px;
+height: 20px;
+z-index: 9999px;
+}
+body{
+	xheight: 720px;
+}
+body, input, textarea,font {
+	font-family: "Verdana", "Geneva", "Arial", "Helvetica", sans-serif !important;
+	font-size: 9pt !important;
+}
+
+#divNavKnoppen{
+	bottom: 10px;
+}
+
+#divHead, #divNavKnoppen{
+	background-color: transparent;
+	font-size: 12px;
+}
+#divHead{ background-color:#A4A5A5; }
+
+#divVraaghead {
+    color: transparent;
+}
+
+.sectie h1{
+	background-color: #A4A5A5;
+	color: #ffffff;
+}
+#divCasus	 h1{background-image:url(../img/head_casus.gif);}
+#divVraag	 h1{background-image:url(../img/head_vraag.gif);}
+#divAntwoord h1{background-image:url(../img/head_antw.gif);}
+
+#divVragen{
+	background-color: transparent;
+}
+#divVraagtekst img{
+position: absolute;
+bottom: 0px;
+right: 0px;
+}
+.sectie{
+	background-color: transparent;
+}
+
+.tekst{
+	background-color: #ffffff;
+	border: 4px solid #A4A5A5;
+	border-top: none;
+}
+#divCasus	 .tekst{border-color:#A4A5A5;}
+#divVraag	 .tekst{border-color:#124691;}
+#divAntwoord .tekst{border-color:#FF9B0A; padding-bottom: 0px;}
+
+.tekstveld_actief, .antw_actief{
+	background-color: #F8E3B7 !important;
+}
+
+.laatstecasus{
+	background-color: #ffffff;
+	border-color: #F8981D;
+}
+
+.laatstecasus{
+
+}
+/* status vraag knoppen */
+#divHead{
+	padding-top: 0px;
+}
+.cButton, .cButton input, #btnTerug, #btnAfsluiten, .Button1{
+	color: #000000;
+	height: 23px;
+   	width: 161px;
+	padding: 3px;
+	text-align: center;
+
+}
+.cButton.disabled{
+	display: none;
+}
+
+.vBtn, .vBtn>input,  .vBtn a{
+	background-color: transparent;
+	background-image: url(../img/vraag_leeg.gif);
+	border-color: transparent;
+	color: #000000; /* nodig omdat anders de stijl van .actief wordt overgenomen */
+	font-weight: normal; /* nodig omdat anders de stijl van .actief wordt overgenomen */
+	text-decoration: none;
+}
+.vBtn.gemaakt, .vBtn.gemaakt>input,  .vBtn.gemaakt a{
+	color: #000000;
+	background-color: transparent;
+	background-image: url(../img/vraag_gemaakt.gif);
+	border-color: transparent;
+}
+.vBtn.nogmaals, .vBtn.nogmaals>input, .vBtn.nogmaals a{
+	color: #000000;
+	background-color: #7F3F98;
+	border-color: #7F3F98;
+}
+.vBtn.actief, .vBtn.actief>input, .vBtn.actief a{
+	color: #000000;
+	background-color: transparent;
+	background-image: url(../img/vraag_actief.gif);
+	border-color: transparent;
+	font-weight: bold;
+}
+
+.startpagina .cButton, .eindpagina .cButton, #btnStart{
+	height: auto;
+	float: none;
+	padding: 5px 10px;
+	display: inline;
+	height: 23px;
+   	width: 161px;
+}
+
+/* antwoord knop staat nu op mogelijkheid-num, kan op alles in .antwActief*/
+.mogelijkheid-num{
+	background-color: #FF9B0A;
+	color: #ffffff;
+}
+.antwoordmogelijkheid:hover{
+	border-color: #FF9B0A;
+}
+
+.antwoordgegeven .mogelijkheid-num{
+	background-color: #A4A5A5;
+}
+
+.antwoordgegeven .antwoordmogelijkheid:hover{
+	border-color: #A4A5A5;
+}
+
+.antwActief .mogelijkheid-num{
+	background-color: #124691;
+}
+.antwActief, .antwoordmogelijkheid.antwActief:hover{
+	border-color: #124691;
+}
+
+
+
+.tekst textarea{ border: 1px solid #dadada;}
+
+/* upload vraag */
+.uploadItem{
+	border-color: #c6c6c6;
+	background-color: #ffffff;
+}
+.uploadItem a{
+	color: #333333;
+}
+#divUploadWizard{
+	border-color: #c6c6c6;
+	background-color: #ffffff;
+}
+#taAntwoordInput{border-color: #999999;}
+
+
+/* toolbar onderin */
+#ulNavKnoppen, .vraagnav, .buttondiv {
+    overflow: hidden;
+    background-image: url(../img/bg_vraagnav.gif);
+}
+#helpButton{
+	padding-right: 3px;
+}
+
+#divHelp{
+	background-color: #ffffff;
+	border: 1px solid #c6c6c6;
+	color: #000000;
+}
+#ulNavKnoppen li, #ulNavKnoppen input{
+	text-align: center;
+	border: 0px;
+}
+#ulNavKnoppen li{
+	margin: 5px;
+	background-position: 0 0;
+}
+#liBtnVorige{
+	background-image: url(../img/btn_vorigevraag.gif);
+}
+#liBtnVolgende{
+	background-image: url(../img/btn_volgendevraag.gif);
+}
+#liBtnAfsluiten, #btnTerug, #btnAfsluiten, #btnAfsluitenBewijsScherm, #btnInzienExamen{
+	background-image: url(../img/btn_afsluiten.gif);
+	width: 211px;
+}
+#ulNavKnoppen .cButton input, #liBtnAfsluiten.cButton input, #btnTerug, #btnAfsluiten, #btnAfsluitenBewijsScherm, #btnInzienExamen{
+	color: #000000;
+	background-color: transparent;
+	border: 0px;
+}
+
+#liBtnVorige input, #liBtnVorigeKandidaat input{
+}
+
+#liBtnVolgende input, #liBtnVolgendeKandidaat input{
+}
+#liBtnVolgendeKandidaat input{
+	background-position: 131px 0px;
+}
+
+#volumeControl{
+	position: absolute;
+	left: 2px;
+	top: 1px;
+	margin: 0px;
+	height: 30px;
+}
+
+/* corrector instellingen */
+
+#correctorenbalk{
+	background-color: #DADADA;
+	background-image: url('../img/bg_balk.gif');
+}
+#correctorenuitklap{
+	border-color: #c6c6c6;
+}
+
+#btnMeerinfo{
+	color: #000000;
+}
+
+#correctorenuitklap .achtergrond{
+    background-color: #ffffff;
+}
+#correctorenuitklap fieldset{
+	background-color: #ffffff;
+	border-color: #c6c6c6;
+}
+
+.selected{
+	background-color: #fcf127;
+}
+
+#divPuntenbalk{
+	background-color: #DADADA;
+	background-image: url('../img/bg_balk.gif');
+}
+.Warning{
+	background-image:none;
+	padding-left: 10px;
+}
+
+/* 4 antwoordmogelijkheden */
+.aantalantw4 .antwoordmogelijkheid{
+	height: 102px;
+}
+.aantalantw4 .antwoordmogelijkheid:hover .mogelijkheid-num,
+.aantalantw4 .antwoordmogelijkheid.antwActief .mogelijkheid-num{
+	line-height: 180px;
+}
+
+/*luister examen specifiek*/
+#divHead
+{
+	height: 48px; /*29*/
+}
+
+#divVragen
+{
+	top: 52px;
+}
+
+#divCasus
+{
+	height: 599px; /*616*/
+}
+
+.casus #divVraag
+{
+	height: 109px; /*109*/ /*-17=92*/
+}
+
+#divAntwoord
+{
+	top: 115px !important; /*115*/ /*96*/
+	height: 484px !important; /*501*/
+}
+
+.opg
+{
+	background-image: none;
+	position: relative;
+	height:22px;
+}
+
+.tl, .tr { position: absolute; }
+.opg .tl { left: 0; top: 0; width: 3px; height: 22px; background-image: url(../img/vraag_leeg_tl.gif); background-position: 0px 0px; }
+.opg .tr { right: 0; top: 0; width: 4px; height: 22px; background-image: url(../img/vraag_leeg_tr.gif); background-position: 0px 0px; }
+.gemaakt .tl { left: 0; top: 0; width: 3px; height: 22px; background-image: url(../img/vraag_gemaakt_tl.gif); background-position: 0px 0px;}
+.gemaakt .tr { right: 0; top: 0; width: 4px; height: 22px; background-image: url(../img/vraag_gemaakt_tr.gif); background-position: 0px 0px; }
+.actief .tl { left: 0; top: 0; width: 3px; height: 22px; background-image: url(../img/vraag_actief_tl.gif); background-position: 0px 0px; }
+.actief .tr { right: 0; top: 0; width: 4px; height: 22px; background-image: url(../img/vraag_actief_tr.gif); background-position: 0px 0px; }
+
+
+.opg.vBtn
+{
+	background-color:#DEE1E1;
+	background-image: none;
+	line-height:22px;
+}
+
+.opg.vBtn.gemaakt
+{
+	background-color:#EEC47B;
+}
+
+.opg.vBtn.actief
+{
+	background-color:#FFAA13;
+}
+
+.opg.vBtn UL
+{
+	margin:0px;
+}
+
+.opg.vBtn li
+{
+	margin-right:0px;
+}
+
+.opg > INPUT
+{
+	height: 15px;
+	margin-top: -4px !important;
+	font-size: 8pt !important;
+	background-image: none !important;
+}
+
+.vBtn
+{
+	width: 33px;
+	background-position: 0px 0px;
+}
+
+.vBtn > INPUT
+{
+	height: 15px;
+	font-size: 8pt !important;
+	background-image: none !important;
+}
+
+.tekst
+{
+	padding-top:2px;
+	padding-bottom:2px;
+}
+
+/* 3 antwoordmogelijkheden */
+.antwoordmogelijkheid {
+	height: 134px;
+}
+
+.antwoordmogelijkheid:hover .mogelijkheid-num,
+.antwoordmogelijkheid.antwActief .mogelijkheid-num{
+	line-height: 244px;
+}
+
+/* 4 antwoordmogelijkheden */
+.aantalantw4 {
+	margin-top: 0px;
+}
+.aantalantw4 .antwoordmogelijkheid{
+	height: 98px;/*102px;*/
+	margin-top: 4px;
+	margin-bottom: 0px;
+}
+.aantalantw4 .antwoordmogelijkheid:hover .mogelijkheid-num,
+.aantalantw4 .antwoordmogelijkheid.antwActief .mogelijkheid-num{
+	line-height: 172px;
+}
+
